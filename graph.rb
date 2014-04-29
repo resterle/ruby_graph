@@ -19,6 +19,8 @@ class Graph
 		@edge_store_BA = Hash.new
 		# Number of edges in graph.
 		@edge_count = 0	
+		# Cache for actual Objects
+		@node_cache = Hash.new
 	end
 	
 	def add_node node
